@@ -1,6 +1,7 @@
 ---
 title: God Game Rules
 layout: default
+permalink: /godgamerules/
 ---
 
 
