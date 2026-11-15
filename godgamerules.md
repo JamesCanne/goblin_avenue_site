@@ -1,6 +1,7 @@
 ---
 title: God Game Rules
 layout: rules
+permalink: /godgamerules/
 ---
 
 Rules Version 0.1 (Nov 2026)
