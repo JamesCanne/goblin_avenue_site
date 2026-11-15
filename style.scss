@@ -1,0 +1,57 @@
+---
+---
+@import "minima";
+
+.rules,
+.rules ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: item;
+}
+
+.rules {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.rules li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 3.2em;
+  margin: 0.4em 0;
+}
+
+.rules li > p {
+  margin: 0;
+}
+
+.rules > li {
+  padding-left: 0;
+  margin-top: 1.5em;
+}
+.rules > li::before {
+  content: counter(item) ". ";
+  font-size: 1.6em;
+  font-weight: bold;
+}
+.rules > li > h2 {
+  display: inline;
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.rules li li::before {
+  content: counters(item, ".");
+  position: absolute;
+  left: 0;
+}
+
+.rules li li ol {
+  margin-left: -1.2em;
+}
+.rules li li li {
+  padding-left: 4em;
+}
+.rules li li li li {
+  padding-left: 5em;
+}
